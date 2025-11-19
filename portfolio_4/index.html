@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-circle"></span>
+                <span class="logo-text">Noah</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="works.html" class="nav-link">Works</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Hey, I'm Noah, a software developer with 4 years of experince</h1>
+                <p class="hero-description">
+                    I care a lot about using designs for positive impact, and enjoy creating user-centric, delightful, and human experiences.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact me</a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="white"/>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="noah/happy.jpeg" alt="Noah">
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <!-- Project 1: Volop in beweging -->
+            <a href="https://101720.stu.sd-lab.nl/beroeps/volop_in_beweging/app/inlog/html/registreer.html" target="_blank" class="project-card project-purple project-link">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">Volop in beweging app</h3>
+                        <p class="project-subtitle">Voor de sporters onde ons</p>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="laptop-mockup">
+                        <div class="laptop-screen">
+                            <img src="noah/prototype home-1.png" alt="Volop in beweging app" class="laptop-content">
+                        </div>
+                        <div class="laptop-base"></div>
+                        <div class="laptop-notch"></div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 2: Quote of the Day -->
+            <a href="games/quotes.html" class="project-card project-dark project-link quote-card-home">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">✨ Quote of the Day</h3>
+                        <p class="project-subtitle">Dagelijkse inspiratie</p>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="project-image quote-preview">
+                    <div class="quote-icon-small">"</div>
+                    <p class="quote-text-small">De enige manier om geweldig werk te doen is houden van wat je doet.</p>
+                    <p class="quote-author-small">— Steve Jobs</p>
+                </div>
+            </a>
+        </section>
+    </div>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        
+        let mouseX = 0;
+        let mouseY = 0;
+        let followerX = 0;
+        let followerY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            cursor.style.left = mouseX + 'px';
+            cursor.style.top = mouseY + 'px';
+        });
+        
+        function animateFollower() {
+            const dx = mouseX - followerX;
+            const dy = mouseY - followerY;
+            
+            followerX += dx * 0.1;
+            followerY += dy * 0.1;
+            
+            cursorFollower.style.left = followerX + 'px';
+            cursorFollower.style.top = followerY + 'px';
+            
+            requestAnimationFrame(animateFollower);
+        }
+        
+        animateFollower();
+        
+        // Hover effects
+        const hoverElements = document.querySelectorAll('a, button, .project-card, .social-icon');
+        
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('hover');
+                cursorFollower.classList.add('hover');
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+                cursorFollower.classList.remove('hover');
+            });
+        });
+    </script>
+</body>
+</html>

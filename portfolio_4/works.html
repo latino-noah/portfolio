@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Noah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-circle"></span>
+                <span class="logo-text">Noah</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="works.html" class="nav-link active">Works</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Works Hero Section -->
+        <section class="works-hero">
+            <h1 class="works-title">Mijn Projecten</h1>
+            <p class="works-description">
+                Een selectie van mijn recente werk. Van web applicaties tot mobile apps, elk project is gemaakt met aandacht voor detail en gebruikerservaring.
+            </p>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Alles</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="works-grid">
+            <!-- Project 1: Volop in beweging -->
+            <a href="https://101720.stu.sd-lab.nl/beroeps/volop_in_beweging/app/inlog/html/registreer.html" target="_blank" class="work-item work-mobile">
+                <div class="work-image">
+                    <div class="laptop-mockup-small">
+                        <div class="laptop-screen">
+                            <img src="noah/prototype home-1.png" alt="Volop in beweging app" class="laptop-content">
+                        </div>
+                        <div class="laptop-base"></div>
+                        <div class="laptop-notch"></div>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="work-tag">Mobile</span>
+                        <span class="work-tag">Web App</span>
+                    </div>
+                    <h3 class="work-title">Volop in beweging</h3>
+                    <p class="work-desc">Een fitness tracking app voor sporters om hun voortgang bij te houden en doelen te bereiken.</p>
+                </div>
+            </a>
+
+            <!-- Project 2: Lendscape -->
+            <div class="work-item work-web">
+                <div class="work-image work-image-dark">
+                    <div class="work-placeholder">
+                        <span class="work-placeholder-text">Lendscape Dashboard</span>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="work-tag">Web App</span>
+                        <span class="work-tag">Dashboard</span>
+                    </div>
+                    <h3 class="work-title">Lendscape</h3>
+                    <p class="work-desc">Een intuïtief dashboard voor het beheren van leningen en betalingen met real-time analytics.</p>
+                </div>
+            </div>
+
+            <!-- Project 3: Clicker Game -->
+            <a href="games/clicker.html" target="_blank" class="work-item work-web">
+                <div class="work-image work-image-cookie-game">
+                    <div class="cookie-game-preview">
+                        <div class="cookie-preview-icon">🍪</div>
+                        <div class="cookie-preview-text">Cookie Empire</div>
+                        <div class="cookie-preview-stats">
+                            <div class="cookie-stat">
+                                <span class="stat-icon">👆</span>
+                                <span class="stat-text">Klik & Verzamel</span>
+                            </div>
+                            <div class="cookie-stat">
+                                <span class="stat-icon">⚡</span>
+                                <span class="stat-text">Upgrades</span>
+                            </div>
+                            <div class="cookie-stat">
+                                <span class="stat-icon">⏱️</span>
+                                <span class="stat-text">Tijdlimiet</span>
+                            </div>
+                        </div>
+                        <div class="play-button">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            <span>Speel Nu!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="work-tag">Web App</span>
+                        <span class="work-tag">Game</span>
+                    </div>
+                    <h3 class="work-title">Cookie Empire</h3>
+                    <p class="work-desc">Een verslavende clicker game met upgrades, achievements en tijdsuitdagingen. Verzamel zoveel mogelijk cookies!</p>
+                </div>
+            </a>
+
+            <!-- Project 4: Portfolio Website -->
+            <div class="work-item work-design">
+                <div class="work-image work-image-white">
+                    <div class="logo-showcase">
+                        <img src="noah/logo.png" alt="Logo 1" class="logo-image">
+                    </div>
+                </div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="work-tag">Design</span>
+                        <span class="work-tag">Branding</span>
+                    </div>
+                    <h3 class="work-title">Logo Design 1</h3>
+                    <p class="work-desc">Een professioneel logo ontwerp met moderne uitstraling en sterke visuele identiteit.</p>
+                </div>
+            </div>
+
+            <!-- Project 5: Task Manager App -->
+            <div class="work-item work-mobile">
+                <div class="work-image work-image-gradient-3">
+                    <div class="work-preview-content">
+                        <div class="preview-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"/>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="work-tag">Mobile</span>
+                        <span class="work-tag">Productivity</span>
+                    </div>
+                    <h3 class="work-title">TaskFlow</h3>
+                    <p class="work-desc">Een slimme task manager app met team collaboration en deadline tracking features.</p>
+                </div>
+            </div>
+
+            <!-- Project 6: Restaurant Website -->
+            <div class="work-item work-design">
+                <div class="work-image work-image-white">
+                    <div class="logo-showcase">
+                        <img src="noah/logo 2.png" alt="Logo 2" class="logo-image">
+                    </div>
+                </div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="work-tag">Design</span>
+                        <span class="work-tag">Branding</span>
+                    </div>
+                    <h3 class="work-title">Logo Design 2</h3>
+                    <p class="work-desc">Een creatief logo ontwerp met unieke vormgeving en krachtige merkidentiteit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2 class="cta-title">Heb je een project idee?</h2>
+                <p class="cta-description">
+                    Laten we samenwerken om jouw visie werkelijkheid te maken.
+                </p>
+                <a href="contact.html" class="btn btn-primary btn-large">Start een project</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const workItems = document.querySelectorAll('.work-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                workItems.forEach(item => {
+                    if (filter === 'all') {
+                        item.style.display = 'block';
+                    } else {
+                        if (item.classList.contains('work-' + filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        
+        let mouseX = 0;
+        let mouseY = 0;
+        let followerX = 0;
+        let followerY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            cursor.style.left = mouseX + 'px';
+            cursor.style.top = mouseY + 'px';
+        });
+        
+        function animateFollower() {
+            const dx = mouseX - followerX;
+            const dy = mouseY - followerY;
+            
+            followerX += dx * 0.1;
+            followerY += dy * 0.1;
+            
+            cursorFollower.style.left = followerX + 'px';
+            cursorFollower.style.top = followerY + 'px';
+            
+            requestAnimationFrame(animateFollower);
+        }
+        
+        animateFollower();
+        
+        // Hover effects
+        const hoverElements = document.querySelectorAll('a, button, .filter-btn, .work-item');
+        
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('hover');
+                cursorFollower.classList.add('hover');
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+                cursorFollower.classList.remove('hover');
+            });
+        });
+    </script>
+</body>
+</html>
