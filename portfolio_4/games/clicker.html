@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -836,12 +836,12 @@
     <div class="timer-select-content">
       <div class="timer-select-title">🍪</div>
       <div class="game-title-text">Cookie Empire</div>
-      <div class="timer-select-subtitle">Kies je speeltijd</div>
+      <div class="timer-select-subtitle">Choose your play time</div>
       
       <div class="game-features">
         <div class="game-feature">
           <div class="feature-icon">👆</div>
-          <div class="feature-text">Klik & Verzamel</div>
+          <div class="feature-text">Click & Collect</div>
         </div>
         <div class="game-feature">
           <div class="feature-icon">⚡</div>
@@ -849,37 +849,37 @@
         </div>
         <div class="game-feature">
           <div class="feature-icon">⏱️</div>
-          <div class="feature-text">Tijdlimiet</div>
+          <div class="feature-text">Time Limit</div>
         </div>
       </div>
       
       <div class="timer-options">
         <div class="timer-option" onclick="selectTime(30)">
           <span class="timer-option-time">30s</span>
-          <span class="timer-option-label">Snel Rondje</span>
+          <span class="timer-option-label">Quick Round</span>
         </div>
         <div class="timer-option" onclick="selectTime(60)">
           <span class="timer-option-time">1:00</span>
-          <span class="timer-option-label">Kort Spel</span>
+          <span class="timer-option-label">Short Game</span>
         </div>
         <div class="timer-option" onclick="selectTime(120)">
           <span class="timer-option-time">2:00</span>
-          <span class="timer-option-label">Normaal</span>
+          <span class="timer-option-label">Normal</span>
         </div>
         <div class="timer-option" onclick="selectTime(300)">
           <span class="timer-option-time">5:00</span>
-          <span class="timer-option-label">Lang Spel</span>
+          <span class="timer-option-label">Long Game</span>
         </div>
       </div>
 
       <div class="custom-timer-input">
-        <label>Of kies eigen tijd:</label>
+        <label>Or choose custom time:</label>
         <input type="number" id="customMinutes" min="1" max="60" value="2" />
-        <label>minuten</label>
+        <label>minutes</label>
       </div>
 
       <button class="start-game-btn" onclick="startGameWithCustomTime()">
-        🎮 Start Spel
+        🎮 Start Game
       </button>
     </div>
   </div>
@@ -887,44 +887,44 @@
   <div id="game">
     <div id="clickArea" class="panel">
       <div id="stats">
-        <div id="timer">⏱️ Tijd: <span id="timerValue">2:00</span></div>
+        <div id="timer">⏱️ Time: <span id="timerValue">2:00</span></div>
         <div id="cookieCount">0 🍪</div>
-        <div id="cps">0 per seconde</div>
-        <div id="multiplier">×1 per klik</div>
+        <div id="cps">0 per second</div>
+        <div id="multiplier">×1 per click</div>
       </div>
       <div class="cookie-button-container">
         <button id="cookieBtn">🍪</button>
       </div>
       <div class="bottom-section">
         <div id="statsPanel">
-          <h3>📊 Statistieken</h3>
+          <h3>📊 Statistics</h3>
           <div class="stat-row">
-            <span class="label">Totaal verdiend:</span>
+            <span class="label">Total earned:</span>
             <span class="value" id="totalEarned">0 🍪</span>
           </div>
           <div class="stat-row">
-            <span class="label">Totaal geklikt:</span>
+            <span class="label">Total clicked:</span>
             <span class="value" id="totalClicks">0</span>
           </div>
           <div class="stat-row">
-            <span class="label">Beste run:</span>
+            <span class="label">Best run:</span>
             <span class="value" id="bestRun">0 🍪</span>
           </div>
           <div class="stat-row">
-            <span class="label">Cookies/klik:</span>
+            <span class="label">Cookies/click:</span>
             <span class="value" id="perClickStat">1</span>
           </div>
           <div class="stat-row">
-            <span class="label">Upgrades gekocht:</span>
+            <span class="label">Upgrades bought:</span>
             <span class="value" id="upgradesBought">0</span>
           </div>
         </div>
         <div id="prestige">
           <h3>⭐ Prestige ⭐</h3>
-          <p>Reset alles voor permanente multiplier!</p>
-          <p id="prestigeInfo">Prestige Punten: <strong>0</strong></p>
-          <p id="nextPrestige">Volgende bij: <strong>1,000,000</strong> cookies</p>
-          <button id="prestigeBtn" disabled>Prestige (+1 punt)</button>
+          <p>Reset everything for permanent multiplier!</p>
+          <p id="prestigeInfo">Prestige Points: <strong>0</strong></p>
+          <p id="nextPrestige">Next at: <strong>1,000,000</strong> cookies</p>
+          <button id="prestigeBtn" disabled>Prestige (+1 point)</button>
         </div>
       </div>
     </div>
@@ -937,23 +937,23 @@
 
   <div class="game-over-screen" id="gameOverScreen">
     <div class="game-over-content">
-      <h1>⏰ TIJD OP! ⏰</h1>
-      <h2>Je Final Score</h2>
+      <h1>⏰ TIME'S UP! ⏰</h1>
+      <h2>Your Final Score</h2>
       <div class="final-stats">
         <div class="final-stat">
-          <span class="label">Cookies verdiend:</span>
+          <span class="label">Cookies earned:</span>
           <span class="value" id="finalCookies">0 🍪</span>
         </div>
         <div class="final-stat">
-          <span class="label">Totaal geklikt:</span>
+          <span class="label">Total clicked:</span>
           <span class="value" id="finalClickCount">0</span>
         </div>
         <div class="final-stat">
-          <span class="label">Cookies per seconde:</span>
+          <span class="label">Cookies per second:</span>
           <span class="value" id="finalCPS">0/s</span>
         </div>
         <div class="final-stat">
-          <span class="label">Upgrades gekocht:</span>
+          <span class="label">Upgrades bought:</span>
           <span class="value" id="finalUpgrades">0</span>
         </div>
         <div class="final-stat">
@@ -961,7 +961,7 @@
           <span class="value" id="finalPrestige">0 ⭐</span>
         </div>
       </div>
-      <button class="restart-btn" id="restartGame">🔄 Speel Opnieuw</button>
+      <button class="restart-btn" id="restartGame">🔄 Play Again</button>
     </div>
   </div>
 
@@ -988,16 +988,16 @@
         icon: '👆',
         baseCost: 15,
         baseProduction: 0.1,
-        description: 'Auto-klikt voor jou',
+        description: 'Auto-clicks for you',
         count: 0
       },
       {
         id: 'grandma',
-        name: 'Oma',
+        name: 'Grandma',
         icon: '👵',
         baseCost: 100,
         baseProduction: 1,
-        description: 'Bakt cookies voor je',
+        description: 'Bakes cookies for you',
         count: 0
       },
       {
@@ -1006,25 +1006,25 @@
         icon: '🌾',
         baseCost: 1100,
         baseProduction: 8,
-        description: 'Verbouwt cookie-ingrediënten',
+        description: 'Grows cookie ingredients',
         count: 0
       },
       {
         id: 'mine',
-        name: 'Cookie Mijn',
+        name: 'Cookie Mine',
         icon: '⛏️',
         baseCost: 12000,
         baseProduction: 47,
-        description: 'Delft chocolade chips',
+        description: 'Mines chocolate chips',
         count: 0
       },
       {
         id: 'factory',
-        name: 'Cookie Fabriek',
+        name: 'Cookie Factory',
         icon: '🏭',
         baseCost: 130000,
         baseProduction: 260,
-        description: 'Massaproductie van cookies',
+        description: 'Mass produces cookies',
         count: 0
       },
       {
@@ -1033,54 +1033,54 @@
         icon: '🏦',
         baseCost: 1400000,
         baseProduction: 1400,
-        description: 'Investeert in cookies',
+        description: 'Invests in cookies',
         count: 0
       },
       {
         id: 'temple',
-        name: 'Cookie Tempel',
+        name: 'Cookie Temple',
         icon: '🛕',
         baseCost: 20000000,
         baseProduction: 7800,
-        description: 'Vergoddelijkt de cookie',
+        description: 'Deifies the cookie',
         count: 0
       },
       {
         id: 'wizard',
-        name: 'Cookie Tovenaar',
+        name: 'Cookie Wizard',
         icon: '🧙',
         baseCost: 330000000,
         baseProduction: 44000,
-        description: 'Tovert cookies uit het niets',
+        description: 'Conjures cookies from thin air',
         count: 0
       },
       {
         id: 'portal',
-        name: 'Cookie Portaal',
+        name: 'Cookie Portal',
         icon: '🌀',
         baseCost: 5100000000,
         baseProduction: 260000,
-        description: 'Haalt cookies uit andere dimensies',
+        description: 'Brings cookies from other dimensions',
         count: 0
       },
       {
         id: 'timemachine',
-        name: 'Tijdmachine',
+        name: 'Time Machine',
         icon: '⏰',
         baseCost: 75000000000,
         baseProduction: 1650000,
-        description: 'Brengt cookies uit de toekomst',
+        description: 'Brings cookies from the future',
         count: 0
       }
     ];
 
     // Click multiplier upgrades
     const clickUpgrades = [
-      { id: 'click1', name: 'Betere Klik', cost: 100, multiplier: 2, bought: false },
-      { id: 'click2', name: 'Super Klik', cost: 1000, multiplier: 5, bought: false },
-      { id: 'click3', name: 'Mega Klik', cost: 10000, multiplier: 10, bought: false },
-      { id: 'click4', name: 'Ultra Klik', cost: 100000, multiplier: 25, bought: false },
-      { id: 'click5', name: 'God Klik', cost: 1000000, multiplier: 50, bought: false }
+      { id: 'click1', name: 'Better Click', cost: 100, multiplier: 2, bought: false },
+      { id: 'click2', name: 'Super Click', cost: 1000, multiplier: 5, bought: false },
+      { id: 'click3', name: 'Mega Click', cost: 10000, multiplier: 10, bought: false },
+      { id: 'click4', name: 'Ultra Click', cost: 100000, multiplier: 25, bought: false },
+      { id: 'click5', name: 'God Click', cost: 1000000, multiplier: 50, bought: false }
     ];
 
     // Achievements
@@ -1089,9 +1089,9 @@
       { cookies: 1000, text: '🚀 1,000 Cookies!' },
       { cookies: 10000, text: '💎 10,000 Cookies!' },
       { cookies: 100000, text: '👑 100,000 Cookies!' },
-      { cookies: 1000000, text: '🌟 1 MILJOEN Cookies!' },
-      { cookies: 10000000, text: '🔥 10 MILJOEN Cookies!' },
-      { cookies: 100000000, text: '⚡ 100 MILJOEN Cookies!' }
+      { cookies: 1000000, text: '🌟 1 MILLION Cookies!' },
+      { cookies: 10000000, text: '🔥 10 MILLION Cookies!' },
+      { cookies: 100000000, text: '⚡ 100 MILLION Cookies!' }
     ];
     let achievementsUnlocked = [];
 
@@ -1129,7 +1129,7 @@
       if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
       if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
       if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
-      return Math.floor(num).toLocaleString('nl-NL');
+      return Math.floor(num).toLocaleString('en-US');
     }
 
     // Format time
@@ -1175,9 +1175,9 @@
     // Update display
     function updateDisplay() {
       document.getElementById('cookieCount').textContent = formatNumber(cookies) + ' 🍪';
-      document.getElementById('cps').textContent = formatNumber(cookiesPerSecond) + ' per seconde';
-      document.getElementById('multiplier').textContent = '×' + formatNumber(cookiesPerClick) + ' per klik';
-      document.getElementById('prestigeInfo').innerHTML = 'Prestige Punten: <strong>' + prestigePoints + '</strong>';
+      document.getElementById('cps').textContent = formatNumber(cookiesPerSecond) + ' per second';
+      document.getElementById('multiplier').textContent = '×' + formatNumber(cookiesPerClick) + ' per click';
+      document.getElementById('prestigeInfo').innerHTML = 'Prestige Points: <strong>' + prestigePoints + '</strong>';
       
       // Update timer
       const timerEl = document.getElementById('timerValue');
@@ -1197,7 +1197,7 @@
       document.getElementById('upgradesBought').textContent = upgradesBought;
       
       const nextPrestigeAt = 1000000 * Math.pow(10, prestigePoints);
-      document.getElementById('nextPrestige').innerHTML = 'Volgende bij: <strong>' + formatNumber(nextPrestigeAt) + '</strong> total cookies';
+      document.getElementById('nextPrestige').innerHTML = 'Next at: <strong>' + formatNumber(nextPrestigeAt) + '</strong> total cookies';
       document.getElementById('prestigeBtn').disabled = totalCookiesAllTime < nextPrestigeAt;
     }
 
@@ -1218,7 +1218,7 @@
                 ${upgrade.name}
               </div>
             </div>
-            <div class="upgrade-desc">Multipliceert klik kracht met ${upgrade.multiplier}x</div>
+            <div class="upgrade-desc">Multiplies click power by ${upgrade.multiplier}x</div>
             <div class="upgrade-footer">
               <div class="upgrade-cost">🍪 ${formatNumber(upgrade.cost)}</div>
             </div>
@@ -1350,7 +1350,7 @@
       
       const nextPrestigeAt = 1000000 * Math.pow(10, prestigePoints);
       if (totalCookiesAllTime >= nextPrestigeAt) {
-        if (confirm('Reset alles voor +1 Prestige Punt?\n\nDit geeft permanent ×' + (1 + (prestigePoints + 1) * 0.5) + ' multiplier op alles!')) {
+        if (confirm('Reset everything for +1 Prestige Point?\n\nThis gives permanent ×' + (1 + (prestigePoints + 1) * 0.5) + ' multiplier on everything!')) {
           // Save best run before resetting
           if (cookies > bestRun) {
             bestRun = cookies;
