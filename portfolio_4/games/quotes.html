@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -331,7 +331,7 @@
         </div>
 
         <div class="quote-card">
-            <div class="category-badge" id="category">Motivatie</div>
+            <div class="category-badge" id="category">Motivation</div>
             <div class="quote-icon">"</div>
             <p class="quote-text" id="quoteText">Loading...</p>
             <div class="quote-author">
@@ -343,125 +343,125 @@
         <div class="actions">
             <button class="btn btn-primary" id="newQuoteBtn">
                 <span>🎲</span>
-                Nieuwe Quote
+                New Quote
             </button>
             <button class="btn btn-secondary" id="copyBtn">
                 <span>📋</span>
-                Kopieer
+                Copy
             </button>
             <button class="btn btn-secondary" id="shareBtn">
                 <span>🔗</span>
-                Deel
+                Share
             </button>
         </div>
 
         <div class="footer">
-            <p>Dagelijkse inspiratie voor jouw reis | <a href="../index.html">← Terug naar Portfolio</a></p>
+            <p>Daily inspiration for your journey | <a href="../index.html">← Back to Portfolio</a></p>
         </div>
     </div>
 
     <div class="toast" id="toast"></div>
 
     <script>
-        // Quote database met verschillende categorieën
+        // Quote database with different categories
         const quotes = [
             {
-                text: "De enige manier om geweldig werk te doen is houden van wat je doet.",
+                text: "The only way to do great work is to love what you do.",
                 author: "Steve Jobs",
-                category: "Motivatie"
+                category: "Motivation"
             },
             {
-                text: "Het leven is 10% wat er met je gebeurt en 90% hoe je erop reageert.",
+                text: "Life is 10% what happens to you and 90% how you react to it.",
                 author: "Charles R. Swindoll",
-                category: "Wijsheid"
+                category: "Wisdom"
             },
             {
-                text: "Succes is niet definitief, falen is niet fataal: het is de moed om door te gaan die telt.",
+                text: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
                 author: "Winston Churchill",
-                category: "Succes"
+                category: "Success"
             },
             {
-                text: "De toekomst behoort toe aan degenen die geloven in de schoonheid van hun dromen.",
+                text: "The future belongs to those who believe in the beauty of their dreams.",
                 author: "Eleanor Roosevelt",
-                category: "Inspiratie"
+                category: "Inspiration"
             },
             {
-                text: "Je hoeft niet geweldig te zijn om te beginnen, maar je moet beginnen om geweldig te worden.",
+                text: "You don't have to be great to start, but you have to start to be great.",
                 author: "Zig Ziglar",
-                category: "Motivatie"
+                category: "Motivation"
             },
             {
-                text: "De beste tijd om een boom te planten was 20 jaar geleden. De op een na beste tijd is nu.",
-                author: "Chinees spreekwoord",
-                category: "Wijsheid"
+                text: "The best time to plant a tree was 20 years ago. The second best time is now.",
+                author: "Chinese Proverb",
+                category: "Wisdom"
             },
             {
-                text: "Wat je doet maakt een verschil, en je moet beslissen welk soort verschil je wilt maken.",
+                text: "What you do makes a difference, and you have to decide what kind of difference you want to make.",
                 author: "Jane Goodall",
-                category: "Inspiratie"
+                category: "Inspiration"
             },
             {
-                text: "De enige onmogelijke reis is degene die je nooit begint.",
+                text: "The only impossible journey is the one you never begin.",
                 author: "Tony Robbins",
-                category: "Motivatie"
+                category: "Motivation"
             },
             {
-                text: "Geloof dat je het kunt en je bent al halverwege.",
+                text: "Believe you can and you're halfway there.",
                 author: "Theodore Roosevelt",
-                category: "Zelfvertrouwen"
+                category: "Confidence"
             },
             {
-                text: "Het is niet de sterkste of de slimste die overleeft, maar degene die het meest aanpasbaar is aan verandering.",
+                text: "It is not the strongest or the smartest who survives, but the one most adaptable to change.",
                 author: "Charles Darwin",
-                category: "Wijsheid"
+                category: "Wisdom"
             },
             {
-                text: "Creativiteit is intelligentie die plezier heeft.",
+                text: "Creativity is intelligence having fun.",
                 author: "Albert Einstein",
-                category: "Creativiteit"
+                category: "Creativity"
             },
             {
-                text: "De reis van duizend mijl begint met een enkele stap.",
+                text: "The journey of a thousand miles begins with a single step.",
                 author: "Lao Tzu",
-                category: "Wijsheid"
+                category: "Wisdom"
             },
             {
-                text: "Blijf positief, werk hard, en maak het gebeuren.",
-                author: "Onbekend",
-                category: "Motivatie"
+                text: "Stay positive, work hard, and make it happen.",
+                author: "Unknown",
+                category: "Motivation"
             },
             {
-                text: "Je missie in het leven is niet alleen om te overleven, maar om te floreren.",
+                text: "Your mission in life is not merely to survive, but to thrive.",
                 author: "Maya Angelou",
-                category: "Inspiratie"
+                category: "Inspiration"
             },
             {
-                text: "Wees de verandering die je wilt zien in de wereld.",
+                text: "Be the change you wish to see in the world.",
                 author: "Mahatma Gandhi",
-                category: "Wijsheid"
+                category: "Wisdom"
             },
             {
-                text: "Perfectie wordt niet bereikt wanneer er niets meer toe te voegen is, maar wanneer er niets meer weg te nemen is.",
+                text: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away.",
                 author: "Antoine de Saint-Exupéry",
                 category: "Design"
             },
             {
-                text: "Code is als humor. Als je het moet uitleggen, is het slecht.",
+                text: "Code is like humor. When you have to explain it, it's bad.",
                 author: "Cory House",
-                category: "Programmeren"
+                category: "Programming"
             },
             {
-                text: "Innovatie onderscheidt een leider van een volger.",
+                text: "Innovation distinguishes between a leader and a follower.",
                 author: "Steve Jobs",
-                category: "Innovatie"
+                category: "Innovation"
             },
             {
-                text: "De beste manier om de toekomst te voorspellen is om deze te creëren.",
+                text: "The best way to predict the future is to create it.",
                 author: "Peter Drucker",
-                category: "Toekomst"
+                category: "Future"
             },
             {
-                text: "Doe vandaag wat anderen niet willen, leef morgen hoe anderen niet kunnen.",
+                text: "Do today what others won't, live tomorrow how others can't.",
                 author: "Jocko Willink",
                 category: "Discipline"
             }
@@ -481,7 +481,7 @@
         function displayDate() {
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             const today = new Date();
-            currentDate.textContent = today.toLocaleDateString('nl-NL', options);
+            currentDate.textContent = today.toLocaleDateString('en-US', options);
         }
 
         // Quote van de dag op basis van datum
@@ -535,9 +535,9 @@
         function copyToClipboard() {
             const quote = `"${quoteText.textContent}" - ${quoteAuthor.textContent}`;
             navigator.clipboard.writeText(quote).then(() => {
-                showToast('✅ Quote gekopieerd naar klembord!');
+                showToast('✅ Quote copied to clipboard!');
             }).catch(() => {
-                showToast('❌ Kon niet kopiëren');
+                showToast('❌ Could not copy');
             });
         }
 
@@ -552,7 +552,7 @@
                 }).catch(() => {});
             } else {
                 copyToClipboard();
-                showToast('💡 Quote gekopieerd! Deel het met je vrienden.');
+                showToast('💡 Quote copied! Share it with your friends.');
             }
         }
 
