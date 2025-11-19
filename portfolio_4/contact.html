@@ -5,6 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Noah</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Contact Page Responsive Improvements */
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+
+            .contact-form-wrapper,
+            .contact-info-wrapper {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero {
+                padding: 40px 0 !important;
+            }
+
+            .contact-title {
+                font-size: 2.5rem !important;
+            }
+
+            .contact-description {
+                font-size: 1rem !important;
+            }
+
+            .contact-section {
+                padding: 40px 0 !important;
+            }
+
+            .section-title {
+                font-size: 1.75rem !important;
+                margin-bottom: 20px !important;
+            }
+
+            .contact-form {
+                padding: 0 !important;
+            }
+
+            .form-group {
+                margin-bottom: 20px !important;
+            }
+
+            .form-group label {
+                font-size: 0.95rem !important;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                font-size: 1rem !important;
+                padding: 12px 16px !important;
+            }
+
+            .btn-large {
+                width: 100%;
+                padding: 14px 24px !important;
+                font-size: 1rem !important;
+            }
+
+            .contact-info-cards {
+                gap: 15px !important;
+            }
+
+            .info-card {
+                padding: 20px !important;
+            }
+
+            .info-card h3 {
+                font-size: 1.1rem !important;
+            }
+
+            .info-card a,
+            .info-card p {
+                font-size: 0.95rem !important;
+            }
+
+            .social-title {
+                font-size: 1.1rem !important;
+                margin-bottom: 15px !important;
+            }
+
+            .social-buttons {
+                gap: 12px !important;
+            }
+
+            .social-btn {
+                width: 48px !important;
+                height: 48px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-hero {
+                padding: 30px 0 !important;
+            }
+
+            .contact-title {
+                font-size: 2rem !important;
+            }
+
+            .contact-description {
+                font-size: 0.95rem !important;
+            }
+
+            .section-title {
+                font-size: 1.5rem !important;
+            }
+
+            .info-card {
+                padding: 16px !important;
+            }
+
+            .info-icon {
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            .info-icon svg {
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            .info-card h3 {
+                font-size: 1rem !important;
+            }
+
+            .info-card a,
+            .info-card p {
+                font-size: 0.9rem !important;
+                word-break: break-word;
+            }
+
+            .social-btn {
+                width: 44px !important;
+                height: 44px !important;
+            }
+
+            .social-btn svg {
+                width: 18px !important;
+                height: 18px !important;
+            }
+        }
+
+        /* Improve form responsiveness */
+        @media (max-width: 768px) {
+            .contact-form-wrapper,
+            .contact-info-wrapper {
+                border-radius: 16px !important;
+            }
+        }
+
+        /* Stack social buttons on very small screens */
+        @media (max-width: 360px) {
+            .social-buttons {
+                justify-content: center !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="cursor"></div>
